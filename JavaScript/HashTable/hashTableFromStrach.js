@@ -38,8 +38,20 @@ class HashTable {
         return undefined
     }
 
+    keys(){
+        let keys = []
+
+        for(let i =0;i<this.data.length;i++)
+            if(this.data[i])
+                for(let j=0;j<this.data[i].length;j++)
+                    keys.push(this.data[i][j][0])
+                
+        return keys
+    }// This is the cons of hash tables
 }
 
 const myHashTable = new HashTable(2)
-myHashTable.set("apple",1000)
-console.log(myHashTable.get("apple"))
+myHashTable.set("apples",1000)
+myHashTable.set("applew",1000)
+
+console.log(myHashTable.keys())
