@@ -45,6 +45,15 @@ const ad_mt_graph = [
     [0,1,1,0], // Node 3 has connection to 1,2
 ]
 
+// Adjacent Matrix can also be a object like : 
+
+const ad_mt_graph_obj = {
+    0:[0,0,1,0], // Node 0 has connection to 2
+    1:[0,0,1,1], // Node 1 has connection to 2,3
+    2:[1,1,0,1], // Node 2 has connection to 1,3,0
+    3:[0,1,1,0], // Node 3 has connection to 1,2
+}
+
 
 
 
